@@ -15,6 +15,8 @@
     <string name="menu_export_bookmarks">导出书签</string>
     <string name="appearance_preferences">外观</string>
     <string name="appearance_preferences_themes">主题</string>
+    <string name="accessibility_keep_toolbar_visible_title">保持工具栏</string>
+    <string name="accessibility_keep_toolbar_visible_summary">滑动页面时始终保持工具栏显示</string>
     <string name="accessibility_preferences_text_rewrap_title">文本环绕 / 重整</string>
     <string name="accessibility_preferences_text_rewrap_summary">缩放时适应文本</string>
     <string name="accessibility_preferences_open_in_external_application_title">用外部程序打开</string>
@@ -52,4 +54,8 @@
     <string name="search_engines_preferences_howto_add">最近访问\n若要添加新的搜索引擎，访问一个搜索引擎(比如 Bing.com)并搜索。几秒后，该搜索引擎将被添加到列表中。</string>
     <string name="suggest_adblock">点击此处开启/关闭广告和跟踪保护</string>
     <string name="website_settings_add_site_description_ads">允许特定站点显示广告</string>
+    <string name="website_settings_desktop_mode">首选桌面模式</string>
+    <string name="website_settings_desktop_mode_enabled">首选桌面模式开启</string>
+    <string name="website_settings_desktop_mode_disabled">首选桌面模式关闭</string>
+    <string name="main_menu_mobile_site">手机网站</string>
 </resources>
