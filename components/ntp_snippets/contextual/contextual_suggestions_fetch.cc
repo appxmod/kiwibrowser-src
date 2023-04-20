@@ -196,12 +196,13 @@ void ContextualSuggestionsFetch::Start(
     FetchClustersCallback callback,
     ReportFetchMetricsCallback metrics_callback,
     const scoped_refptr<network::SharedURLLoaderFactory>& loader_factory) {
-  request_completed_callback_ = std::move(callback);
-  url_loader_ = MakeURLLoader();
-  url_loader_->DownloadToStringOfUnboundedSizeUntilCrashAndDie(
-      loader_factory.get(),
-      base::BindOnce(&ContextualSuggestionsFetch::OnURLLoaderComplete,
-                     base::Unretained(this), std::move(metrics_callback)));
+  //屏蔽新闻信息流的加载
+  //request_completed_callback_ = std::move(callback);
+  //url_loader_ = MakeURLLoader();
+  //url_loader_->DownloadToStringOfUnboundedSizeUntilCrashAndDie(
+     // loader_factory.get(),
+     // base::BindOnce(&ContextualSuggestionsFetch::OnURLLoaderComplete,
+                    // base::Unretained(this), std::move(metrics_callback)));
 }
 
 std::unique_ptr<network::SimpleURLLoader>

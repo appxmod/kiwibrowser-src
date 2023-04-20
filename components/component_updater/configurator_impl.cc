@@ -79,7 +79,9 @@ std::vector<GURL> ConfiguratorImpl::UpdateUrl() const {
 }
 
 std::vector<GURL> ConfiguratorImpl::PingUrl() const {
-  return pings_enabled_ ? UpdateUrl() : std::vector<GURL>();
+  //return pings_enabled_ ? UpdateUrl() : std::vector<GURL>();
+  //屏蔽检查更新
+  return std::vector<GURL>();
 }
 
 const base::Version& ConfiguratorImpl::GetBrowserVersion() const {

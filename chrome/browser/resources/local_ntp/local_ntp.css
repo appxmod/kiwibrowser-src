@@ -2,11 +2,12 @@
  * Use of this source code is governed by a BSD-style license that can be
  * found in the LICENSE file. */
 
+
+
 html {
   /* Material Design constants */
   --md-tile-height: 104px;
   --md-tile-margin: 8px;
-
   /* This will be overridden based on the viewport width, see below. */
   --column-count: 2;
 
@@ -14,33 +15,7 @@ html {
       (var(--column-count) * (var(--tile-width) + var(--tile-margin)))
       /* We add an extra pixel because rounding errors on different zooms can
        * make the width shorter than it should be. */
-      + 1px);
-
-  --logo-height: 200px; /* Normal height of a doodle. */
-  --logo-margin-top: 56px; /* Expected OGB height, so logo doesn't overlap. */
-  --logo-margin-bottom: 29px; /* Between logo and fakebox. */
-
-  /* Initial height determines the margin between the logo and the fakebox. If
-   * the iframe height exceeds the normal --logo-height, the difference is
-   * subtracted from the margin. The actual --logo-iframe-{width,height} can be
-   * changed later, but the initial height, and therefore the margin, remains
-   * the same.
-   */
-  --logo-iframe-initial-height: var(--logo-height);
-  --logo-iframe-height: var(--logo-height);
-  --logo-iframe-resize-duration: 150ms;
-  --logo-iframe-width: 500px;
-  --tile-height: 128px;
-  --tile-margin: 16px;
-  --tile-width: 154px;
-
-  --mv-notice-time: 10s;
-
-  /* These can be overridden by themes. */
-  --text-color: #000;
-  --text-color-light: #fff;
-  --text-color-link: rgb(17, 85, 204);
-
+      + 1px);																	   
   height: 100%;
 }
 
@@ -775,8 +750,8 @@ input:checked + .toggle::before {
 }
 
 .grid-image {
-    height: 64px;
-    width: 64px;
+    height: 44px;
+    width: 44px;
     object-fit: contain;
 }
 
@@ -795,6 +770,8 @@ input:checked + .toggle::before {
     text-align: center;
     z-index: 999999;
     color: #777;
+	position: absolute;
+    right: 10px;
 }
 
 .configure-item a, .configure-item-explore a {

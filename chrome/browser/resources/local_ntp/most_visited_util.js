@@ -195,7 +195,8 @@ var isSchemeAllowed = function(url) {
  *     data to fill.
  */
 function fillMostVisited(location, fill) {
-  var params = parseQueryParams(location);
+  //不触发访问最多的记录
+  /*var params = parseQueryParams(location);
   params.rid = parseInt(params.rid, 10);
   if (!isFinite(params.rid))
     return;
@@ -211,5 +212,5 @@ function fillMostVisited(location, fill) {
 
   if (data.direction)
     document.body.dir = data.direction;
-  fill(params, data);
+  fill(params, data);*/
 }

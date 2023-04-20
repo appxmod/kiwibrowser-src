@@ -51,13 +51,13 @@ namespace {
 
 // Default (for countries with no better engine set)
 const PrepopulatedEngine* const engines_default[] = {
-    &kiwi, &google, &google_en, &bing, &yahoo, &duckduckgo, &qwant, &liteqwant, &startpage, &yandex_ru
+    &google, &bing, &baidu, &yahoo, &yandex_ru
 };
 
 // A list of all the engines that we know about.
 const PrepopulatedEngine* const kAllEngines[] = {
     // Prepopulated engines:
-    &kiwi, &google, &google_en, &bing, &yahoo, &duckduckgo, &qwant, &liteqwant, &startpage, &yandex_ru
+    &google, &bing, &baidu, &yahoo, &yandex_ru
 };
 
 // Please refer to ISO 3166-1 for information about the two-character country
