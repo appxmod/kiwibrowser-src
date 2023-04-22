@@ -36,6 +36,7 @@ Make sure to properly attribute the code to this repository (don't just replace 
   - [Optimizing binary size](#optimizing-binary-size)
 - [Roadmap](#roadmap)
 - [Additional help](#additional-help)
+- [Translate guide](#translate-guide)
 
 ## Timeline
 
@@ -307,3 +308,20 @@ You can ask for extra help in our Discord server, or by [filing an issue](https:
 Have fun with Kiwi!
 
 Arnaud.
+
+## Translate guide
+
+在src/tools/grit目录下运行以下python命令
+
+```
+from grit.extern.tclib import GenerateMessageId
+GenerateMessageId("Continue running background apps when Chromium is closed")
+```
+就能看到输出'3296368748942286671'
+
+也就是说translation id '3296368748942286671' 是根据所需要翻译内容"Continue running background apps when Chromium is closed"计算出来的。
+
+在对应的语言文件，把翻译的内容写成下面的即可
+```
+<translation id="3296368748942286671">关闭浏览器后继续运行后台应用</translation>
+```
